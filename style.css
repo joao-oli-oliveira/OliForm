@@ -46,17 +46,22 @@
     isolation: isolate;
   }
 
-/*-----------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 :root{
   background-color: rgb(139, 122, 95);
   color: aliceblue;
   }
 
+input:user-invalid {
+  border: 2px solid red;
+}
+
 input:valid {border-color: rgb(73, 165, 42);}
-input:invalid{border-color: rgb(38, 61, 154);}
+/* input:invalid{border-color: rgb(38, 61, 154);} */
 
 body {
   display: flex;
+  gap: 0
 }
 
 .left {
@@ -68,6 +73,19 @@ body {
   height: 100vh;
 }
 
+.banner {
+  position: relative;
+  top: 20vh;
+  height: 150px;
+  background-color: rgb(0, 0, 0,0.2);
+  /* text-align: center; */
+}
+.banner img {
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -75,21 +93,23 @@ main{
   width: 65vw;
   height: 100vh;
   max-width: 836px;
-
+  margin: 0 3vw 0 3vw;
 }
 
 div p {
-margin: 0 3vw 10px 3vw;}
+}
 
 .input-fields {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin: 3vw 0 3vw 0;
 }
 
 fieldset {  
-  /* border: 0cap;
-  margin: 0 3vw 10px 3vw;} */
+  border: none;
+  padding: 0;
+
 }
 
 label {
