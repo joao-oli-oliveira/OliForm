@@ -56,26 +56,30 @@ input:valid {border-color: rgb(73, 165, 42);}
 input:invalid{border-color: rgb(38, 61, 154);}
 
 body {
-    display: flex;
+  display: flex;
 }
 
 .left {
-    background-image: url(./assets/gabrielle-maurer-on_wnJU2n7g-unsplash.jpg);
-    width: 35vw;
-    max-width: 30em;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+  background-image: url(./assets/gabrielle-maurer-on_wnJU2n7g-unsplash.jpg);
+  width: 35vw;
+  max-width: 30em;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 65vw;
-    height: 100vh;
-    padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65vw;
+  height: 100vh;
+  max-width: 836px;
+
 }
+
+div p {
+margin: 0 3vw 10px 3vw;}
 
 .input-fields {
   display: flex;
@@ -83,11 +87,22 @@ main{
   gap: 1rem;
 }
 
+fieldset {  
+  /* border: 0cap;
+  margin: 0 3vw 10px 3vw;} */
+}
+
 label {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  flex: 1 0 200px;
 }
 
+input{ 
+  display: flex; 
+  width: 100%;
+}
 /* @media (min-width: 320px) {
     html {
       font-size: calc(5px + 6 * ((100vw - 320px) / 680));
