@@ -46,16 +46,21 @@
     isolation: isolate;
   }
 
+/*-----------------------------------------------------------------*/
+:root{
+  background-color: rgb(139, 122, 95);
+  color: aliceblue;
+  }
+
+input:valid {border-color: rgb(73, 165, 42);}
+input:invalid{border-color: rgb(38, 61, 154);}
 
 body {
     display: flex;
 }
 
-
 .left {
-    padding: 20px;
     background-image: url(./assets/gabrielle-maurer-on_wnJU2n7g-unsplash.jpg);
-    flex-grow: 1;
     width: 35vw;
     max-width: 30em;
     background-position: center;
@@ -67,13 +72,20 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 3;
     width: 65vw;
     height: 100vh;
-    padding: 3rem;
+    padding: 5rem;
 }
 
-form :first-child {
+.input-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }
 
 /* @media (min-width: 320px) {
@@ -86,11 +98,3 @@ form :first-child {
       font-size: 10%;
     }
   } */
-
-:root{
-background-color: rgb(81, 71, 55);
-color: aliceblue;
-}
-
-input:valid {border-color: rgb(73, 165, 42);}
-input:invalid{border-color: rgb(38, 61, 154);}
