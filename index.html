@@ -47,6 +47,7 @@
               name="user_phone"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               placeholder="123-456-7890"
+              required
             />
           </label>
           <label>
@@ -56,6 +57,7 @@
               name="password"
               minlength="3"
               maxlength="20"
+              id="password"
               required
             />
           </label>
@@ -66,15 +68,17 @@
               name="password_confirmation"
               minlength="3"
               maxlength="20"
+              id="confirmPassword"
               required
             />
           </label>
         </fieldset>
         <fieldset>
-          <button type="submit">Submit</button>
-          <p>Little text over here</p>
+          <button type="submit" id="button">Submit</button>
+          <p>Have an account? <a href="http://www.google.com\">Log in</a> </p>
         </fieldset>
       </form>
     </main>
+    <script src="./javascript.js" defer></script>
   </body>
 </html>
